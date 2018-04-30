@@ -1,3 +1,5 @@
 <resources>
 	<string name="app_name">DaydreamMovie</string>
+
+	<string name="msgFileNotFound">file not found.</string>
 </resources>
