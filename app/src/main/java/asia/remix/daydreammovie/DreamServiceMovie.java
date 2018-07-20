@@ -61,4 +61,17 @@ public class DreamServiceMovie extends DreamService{
 			Toast.makeText( getApplicationContext(), R.string.msgFileNotFound, Toast.LENGTH_LONG ).show();
 		}
 	}
+
+	@Override
+	public void onDreamingStopped(){
+		super.onDreamingStopped();
+		Log.d( TAG, "●onDreamingStopped()" );
+		videoview.stopPlayback();
+	}
+
+	@Override
+	public void onDetachedFromWindow(){
+		super.onDetachedFromWindow();
+		Log.d( TAG, "●onDetachedFromWindow()" );
+	}
 }
